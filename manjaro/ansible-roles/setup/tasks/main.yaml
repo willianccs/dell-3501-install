@@ -1,0 +1,15 @@
+---
+- name: Run the equivalent of "pacman -Sy"
+  community.general.pacman:
+    update_cache: yes
+
+- name: Install essentials packages
+  community.general.pacman:
+    name: "{{ pkg_essentials }}"
+    state: present
+    extra_args: --needed
+
+- name: Install common packages
+  community.general.pacman:
+    name: "{{ pkg_common }}"
+    state: present

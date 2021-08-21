@@ -1,0 +1,12 @@
+pkg_essentials:
+  - base-devel
+  - git
+  - pacman-contrib
+  - zip
+
+pkg_common:
+  - terminator
+  - jre-openjdk-headless
+  - jre-openjdk
+  - jdk-openjdk
+  - helm
